@@ -47,7 +47,7 @@
     "HyperVHost_NSG_Name": "[format('{0}-NSG', variables('HyperVHostName'))]",
     "HyperVHostNicName": "[format('{0}-NIC', variables('HyperVHostName'))]",
     "BastionNsgName": "[format('{0}-NSG', variables('BastionHostName'))]",
-    "BastionHostName": "[format('{0}-bastion', variables('HyperVHostName'))]",
+    "BastionHostName": "[format('{0}-bastion', resourceGroup().Name)]",
     "Bastion_PUBIPName": "[format('{0}-PIP', variables('BastionHostName'))]",
     "HyperVHostConfigURL": "https://github.com/weeyin83/Lab-Deployment-in-Azure/blob/main/HyperVHostConfig.zip?raw=true",
     "HyperVHostInstallHyperVScriptFolder": ".",
