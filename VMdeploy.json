@@ -37,7 +37,8 @@
     }
   },
   "variables": {
-    "RGName": "[toLower([replace(parameters('ResGroup'), '-', '')])]",
+    "ResGr" : "[replace(parameters('ResGroup'), '-', '')]",
+    "RGName": "[toLower(variables('ResGr'))]",
     "OnPremVNETName": "OnPremVNET",
     "OnPremVNETPrefix": "10.0.0.0/16",
     "OnPremVNETSubnet1Name": "VMHOST",
