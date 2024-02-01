@@ -17,6 +17,10 @@
       "type": "securestring",
       "minLength": 8
     },
+    "ResGroup": {
+      "type": "string",
+      "defaultvalue": "[rsourceGroup().name]"
+    },
     "location": {
       "type": "string",
       "defaultValue": "[resourceGroup().location]"
@@ -33,7 +37,7 @@
     }
   },
   "variables": {
-    "RGName": "[replace(parameters('resourceGroup().Name'), '-', '')]",
+    "RGName": "[replace(parameters('ResGroup'), '-', '')]",
     "OnPremVNETName": "OnPremVNET",
     "OnPremVNETPrefix": "10.0.0.0/16",
     "OnPremVNETSubnet1Name": "VMHOST",
