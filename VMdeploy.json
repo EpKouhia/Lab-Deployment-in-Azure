@@ -54,10 +54,10 @@
     "BastionNsgName": "[format('{0}-NSG', variables('BastionHostName'))]",
     "BastionHostName": "[format('{0}bastion', variables('RGName'))]",
     "Bastion_PUBIPName": "[format('{0}PIP', variables('BastionHostName'))]",
-    "HyperVHostConfigURL": "https://github.com/gunars.lodzins/Lab-Deployment-in-Azure/blob/main/HyperVHostConfig.zip?raw=true",
+    "HyperVHostConfigURL": "https://github.com/weeyin83/Lab-Deployment-in-Azure/blob/main/HyperVHostConfig.zip?raw=true",
     "HyperVHostInstallHyperVScriptFolder": ".",
     "HyperVHostInstallHyperVScriptFileName": "InstallHyperV.ps1",
-    "HyperVHostInstallHyperVURL": "https://raw.githubusercontent.com/gunars.lodzins/Lab-Deployment-in-Azure/main/InstallHyperV.ps1"
+    "HyperVHostInstallHyperVURL": "https://raw.githubusercontent.com/weeyin83/Lab-Deployment-in-Azure/main/InstallHyperV.ps1"
   },
   "resources": [
     {
