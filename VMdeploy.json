@@ -33,7 +33,6 @@
     }
   },
   "variables": {
-    "RGParam": "resourceGroup().Name",
     "RGName": "[replace(parameters('resourceGroup().Name'), '-', '')]",
     "OnPremVNETName": "OnPremVNET",
     "OnPremVNETPrefix": "10.0.0.0/16",
