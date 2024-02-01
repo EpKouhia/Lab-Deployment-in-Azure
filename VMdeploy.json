@@ -33,6 +33,7 @@
     }
   },
   "variables": {
+    "RGName": "[replace(resourceGroup().Name, '-', '')]",
     "OnPremVNETName": "OnPremVNET",
     "OnPremVNETPrefix": "10.0.0.0/16",
     "OnPremVNETSubnet1Name": "VMHOST",
@@ -47,7 +48,7 @@
     "HyperVHost_NSG_Name": "[format('{0}-NSG', variables('HyperVHostName'))]",
     "HyperVHostNicName": "[format('{0}-NIC', variables('HyperVHostName'))]",
     "BastionNsgName": "[format('{0}-NSG', variables('BastionHostName'))]",
-    "BastionHostName": "[format('{0}-bastion', [replace(resourceGroup().Name, "-", "")])]",
+    "BastionHostName": "[format('{0}-bastion', variables('RGName'))]",
     "Bastion_PUBIPName": "[format('{0}-PIP', variables('BastionHostName'))]",
     "HyperVHostConfigURL": "https://github.com/gunars.lodzins/Lab-Deployment-in-Azure/blob/main/HyperVHostConfig.zip?raw=true",
     "HyperVHostInstallHyperVScriptFolder": ".",
