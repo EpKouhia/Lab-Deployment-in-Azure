@@ -19,7 +19,7 @@
     },
     "ResGroup": {
       "type": "string",
-      "defaultvalue": "[rsourceGroup().name]"
+      "defaultvalue": "[resourceGroup().name]"
     },
     "location": {
       "type": "string",
