@@ -6,7 +6,7 @@ Within this repo you will find an ARM template that deploys a virtual machine wi
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fweeyin83%2FLab-Deployment-in-Azure%2Fmain%2FVMdeploy.json" target="_blank">
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fgunarslodzins%2FLab-Deployment-in-Azure%2Fmain%2FVMdeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
@@ -76,7 +76,7 @@ Once the servers are deployed you need to carry out the following configuration 
     - Subnet Mask: 255.255.255.0
     - Default Gateway: 192.168.0.1
     - Preferred DNS: 192.168.0.2
-    - Alternative DNS: 1.1.1.1
+    - Alternative DNS: 8.8.8.8
 
 - Log into SQL01 and set the server to have a static IP configuration as follows:
     - IP Address: 192.168.0.4
